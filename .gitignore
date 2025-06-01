@@ -1,3 +1,3 @@
-# Ignore specific files
+# Ignore redundant resource files
 Lib/Data/Finale.instruments
 Lib/Data/sqlite_to_xml.py
