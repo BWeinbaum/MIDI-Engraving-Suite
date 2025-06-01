@@ -1,17 +1,25 @@
 --[[
+-------------------------------------------------------------------------------------------------------
 
-    Copyright (c) 2024 Brendan Weinbaum.
+    Copyright (c) 2025 Brendan Weinbaum.
     All rights reserved.
 
     This module is responsible for carrying out the subtask of organizing the articulation staves
     output of a Digital Audio Workstation (DAW) into an instrument list that is more useful in Finale.
 
+    Declaration order:
+    1. Instance fields
+    2. Constructor
+    3. Helper methods
+    4. Interface
+
+-------------------------------------------------------------------------------------------------------
 ]]
 
--- TODO: Go through initialize, create_main_ui and make many little, local helper methods out of the code that is there.
-
 --[[
+-------------------------------------------------------------------------------------------------------
     Import Modules
+-------------------------------------------------------------------------------------------------------
 ]]
 
 local midi = require "Lib.midi_engraving_lib"
@@ -20,13 +28,11 @@ local ArticulationXMLParser = require "Lib.articulation_xml_parser"
 local FinaleInstrumentXMLParser = require "Lib.finale_instrument_xml_parser"
 
 --[[
+-------------------------------------------------------------------------------------------------------
     Global Module: PHAssignStaves
 
-    Steps for conversion:
-    1. Declare instance fields
-    2. Create a constructor; assign instance fields.
-    3. Organize helper methods.
-    4. Create interface.
+    Module encompassing this Lua file. Meant to be accessed, run, and displayed via a driver script.
+-------------------------------------------------------------------------------------------------------
 ]]
 
 -- Static class for organizing articulation staves into instruments. Recommended to call methods in the following order:
@@ -36,10 +42,6 @@ local FinaleInstrumentXMLParser = require "Lib.finale_instrument_xml_parser"
 --- @class PHAssignStaves
 local PHAssignStaves = {}
 PHAssignStaves.__index = PHAssignStaves
-
---[[
-    Instance Variables
-]]
 
 --- @type TreeInstrument[]
 --- Table of TreeInstrument objects as defined in the UI.
@@ -67,11 +69,13 @@ local staves = finale.FCStaves()
 local current_directory = debug.getinfo(1, "S").source:sub(2):match("(.*[/\\])")
 local art_xml_parser = ArticulationXMLParser.Init({current_directory .. 'Data/default.xml',
                 current_directory .. 'Data/saved.xml',
-                current_directory .. 'Data/spitfire_bbcsymphonyorchestra.xml'}) --TODO: Read Entire Folder
+                current_directory .. 'Data/spitfire_bbcsymphonyorchestra.xml'}) --TODO: Temporary implementation. Read entire folder.
 local finale_xml_parser = FinaleInstrumentXMLParser.Init(current_directory .. 'Data/finale.xml')
 
 --[[
-    Sub-Module (not externally accessible): TreeInstrument
+-------------------------------------------------------------------------------------------------------
+    Local Helper Module: TreeInstrument
+-------------------------------------------------------------------------------------------------------
 ]]
 
 --- Organizational class for consolidating articulation staves into a single instrument definition.
@@ -181,8 +185,10 @@ end
 function TreeInstrument.ClassName() return "TreeInstrument" end
 
 --[[
-    Helper methods
-]]
+-------------------------------------------------------------------------------------------------------
+    End of TreeInstrument
+-------------------------------------------------------------------------------------------------------
+]]--
 
 --- Returns the ItemNo of the first staff belonging to an instrument specified by instrument_number.
 --- Order is determined by index of the table: instruments. Returns nil if instrument does not possess
@@ -514,7 +520,12 @@ local function display_new_instrument_dialog(instrument_id)
 end
 
 --[[
-            PHASE 1: GUI
+-------------------------------------------------------------------------------------------------------
+    GUI
+
+    These methods define the program's GUI. Selections are made by the user, which are applied to the
+    score once the user notifies the program that he/she is done.
+-------------------------------------------------------------------------------------------------------
 ]]
 
 -- Method for interpreting groups in the document. If groups are determined to be
@@ -1070,7 +1081,12 @@ function PHAssignStaves.DisplayDialog()
 end
 
 --[[
-            PHASE 2: Functionality
+-------------------------------------------------------------------------------------------------------
+    Functionality
+
+    These methods are meant to be called once preferences are set in the GUI. They are responsible
+    for making tangible changes to the score.
+-------------------------------------------------------------------------------------------------------
 ]]
 
 -- Organizes the score based on the instrument assignments made in the main dialog.
@@ -1379,18 +1395,5 @@ function PHAssignStaves.CreateTemporaryDisplayGroups()
     end
 end
 
+-- Return module for use by external driver script.
 return PHAssignStaves
-
-
---[[ EXECUTION STARTS HERE --
-
--- PHASE 1 --
-initialize()
-local success = create_main_ui()
-
--- PHASE 2 --
-if success == 1 then
-    reorder_staves()
-    assign_instrument_UUIDs()
-    create_temporary_groups()
-end]]
