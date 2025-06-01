@@ -32,9 +32,9 @@ This project is currently private and closed-source.
 
 ## 📜 License
 
-© [Brendan Weinbaum] [2025]. All rights reserved.
+© Brendan Weinbaum 2025. All rights reserved.
 
 This software and its contents are **copyrighted material** owned by **Brendan Weinbaum**.  
 Unauthorized reproduction, modification, distribution, or use of this software without **explicit permission** is prohibited.  
 
-For licensing inquiries, collaboration requests, or special permissions, please contact **[brendan@composerscollaborative.com]**.
+For licensing inquiries, collaboration requests, or special permissions, please contact **brendan@composerscollaborative.com**.
