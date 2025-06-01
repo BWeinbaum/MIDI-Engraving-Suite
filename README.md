@@ -30,5 +30,11 @@ This project is currently private and closed-source.
 - Select collaborators are welcome to submit issues, requests, or potential improvements via **GitHub Issues**.
 - Fork the repository and make a **pull request** with contributions.  
 
-## 📜 License  
-This project is copyright material by Brendan Weinbaum. All rights reserved.
+## 📜 License
+
+© [Brendan Weinbaum] [2025]. All rights reserved.
+
+This software and its contents are **copyrighted material** owned by **Brendan Weinbaum**.  
+Unauthorized reproduction, modification, distribution, or use of this software without **explicit permission** is prohibited.  
+
+For licensing inquiries, collaboration requests, or special permissions, please contact **[brendan@composerscollaborative.com]**.
