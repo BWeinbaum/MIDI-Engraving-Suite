@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <plugin-name>Default</plugin-name>
+    <property name="hide_name_in_preview">true</property>
+    <property name="prioritize_in_order">true</property>
+    <instrument>
+        <instrument-name>No Articulation</instrument-name>
+        <articulation>
+            <articulation-name>No Articulation</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Long</instrument-name>
+        <articulation>
+            <articulation-name>Tenuto</articulation-name>
+            <action name="apply_articulation_from_preset">3</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Louré</articulation-name>
+            <action name="apply_articulation_from_preset">4</action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Short</instrument-name>
+        <articulation>
+            <articulation-name>Staccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">2</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Pizzicato</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Tremolo</instrument-name>
+        <articulation>
+            <articulation-name>Unmetered Single-Note Tremolo</articulation-name>
+            <action name="apply_articulation_from_preset">35</action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Visual</instrument-name>
+        <articulation>
+            <articulation-name>X Noteheads</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0A9</quarter>
+                <half>0xE0A8</half>
+                <whole>0xE0A7</whole>
+                <double-whole>0xE0A6</double-whole>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Plus Noteheads</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0AF</quarter>
+                <half>0xE0AE</half>
+                <whole>0xE0AD</whole>
+                <double-whole>0xE0AC</double-whole>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Circle X Noteheads</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0B3</quarter>
+                <half>0xE0B2</half>
+                <whole>0xE0B1</whole>
+                <double-whole>0xE0B0</double-whole>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Oval X Noteheads</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0B7</quarter>
+                <half>0xE0B6</half>
+                <whole>0xE0B5</whole>
+                <double-whole>0xE0B4</double-whole>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Triangle Up Noteheads</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0BE</quarter>
+                <half>0xE0BD</half>
+                <whole>0xE0BC</whole>
+                <double-whole>0xE0BB</double-whole>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Triangle Down Noteheads</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0C7</quarter>
+                <half>0xE0C5</half>
+                <whole>0xE0C4</whole>
+                <double-whole>0xE0C3</double-whole>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Diamond Noteheads</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0DB</quarter>
+                <half>0xE0D9</half>
+                <whole>0xE0D8</whole>
+                <double-whole>0xE0D7</double-whole>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Circled Noteheads (Small Circle)</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0E4</quarter>
+                <half>0xE0E5</half>
+                <whole>0xE0E6</whole>
+                <double-whole>0xE0E7</double-whole>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Circled Noteheads (Large Circle)</articulation-name>
+            <action name="notehead_mod">
+                <quarter>0xE0E8</quarter>
+                <half>0xE0E9</half>
+                <whole>0xE0EA</whole>
+                <double-whole>0xE0EB</double-whole>
+            </action>
+        </articulation>
+    </instrument>
+</plugin>

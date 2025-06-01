@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <plugin-name>Spitfire BBCSO</plugin-name>
+    <instrument>
+        <instrument-name>Violins</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long CS</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flautando</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flautando</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Spiccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>off the string</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Pizzicato</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Col Legno</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>col legno</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Sul Tasto</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul tasto</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Harmonics</articulation-name>
+            <action name="apply_articulation_from_preset">23</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Short Harmonics</articulation-name>
+            <action name="apply_articulation_from_preset">23</action>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Bartok Pizz</articulation-name>
+            <action name="apply_articulation_from_preset">50</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Marcato Attack</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo Sul Pont</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul pont.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo CS</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Sul Pont</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul pont.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Spiccato CS</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Violas</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long CS</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flautando</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flautando</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Spiccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>off the string</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Pizzicato</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Col Legno</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>col legno</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Sul Tasto</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul tasto</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Harmonics</articulation-name>
+            <action name="apply_articulation_from_preset">23</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Short Harmonics</articulation-name>
+            <action name="apply_articulation_from_preset">23</action>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Bartok Pizz</articulation-name>
+            <action name="apply_articulation_from_preset">50</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Marcato Attack</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo Sul Pont</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul pont.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo CS</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Sul Pont</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul pont.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Spiccato CS</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Celli</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long CS</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flautando</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flautando</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Spiccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>off the string</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Pizzicato</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Col Legno</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>col legno</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Sul Tasto</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul tasto</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Harmonics</articulation-name>
+            <action name="apply_articulation_from_preset">23</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Short Harmonics</articulation-name>
+            <action name="apply_articulation_from_preset">23</action>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Bartok Pizz</articulation-name>
+            <action name="apply_articulation_from_preset">50</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Marcato Attack</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo Sul Pont</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul pont.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo CS</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Sul Pont</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul pont.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Spiccato CS</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Basses</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long CS</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flautando</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flautando</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Spiccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>off the string</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccato</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Pizzicato</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Col Legno</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>col legno</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Sul Tasto</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul tasto</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Harmonics</articulation-name>
+            <action name="apply_articulation_from_preset">23</action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Short Harmonics</articulation-name>
+            <action name="apply_articulation_from_preset">23</action>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Bartok Pizz</articulation-name>
+            <action name="apply_articulation_from_preset">50</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>pizz.</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Marcato Attack</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo Sul Pont</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul pont.</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tremolo CS</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Sul Pont</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>sul pont.</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Spiccato CS</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+            <action name="transpose">12</action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Horn(s)</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Cuivré</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>cuivré</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long sfz</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flutter</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Multi-tongue</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Muted</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo Muted</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato Muted</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Trumpet(s)</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Cuivré</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>cuivré</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long sfz</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flutter</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Multi-tongue</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Muted</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo Muted</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato Muted</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Trombone(s)</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Cuivré</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>cuivré</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long sfz</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flutter</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Multi-tongue</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Muted</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo Muted</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato Muted</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>con sord.</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Tuba</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Cuivré</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>cuivré</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long sfz</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flutter</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Multi-tongue</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Flute(s)</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tenuto</articulation-name>
+            <action name="apply_articulation_from_preset">3</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flutter</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Multi-tongue</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Piccolo</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tenuto</articulation-name>
+            <action name="apply_articulation_from_preset">3</action>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flutter</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flz.</text>
+            </action>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Multi-tongue</articulation-name>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Rips</articulation-name>
+            <action name="apply_articulation_from_preset">58</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>rip</text>
+            </action>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Falls</articulation-name>
+            <action name="apply_articulation_from_preset">63</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>fall</text>
+            </action>
+            <action name="transpose">-12</action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Oboes(s)</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tenuto</articulation-name>
+            <action name="apply_articulation_from_preset">3</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Multi-tongue</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Clarinet(s)</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tenuto</articulation-name>
+            <action name="apply_articulation_from_preset">3</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flutter</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flz.</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Multi-tongue</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Bassoon(s)</instrument-name>
+        <articulation>
+            <articulation-name>Legato</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Long</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Major 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Trill (Minor 2nd)</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Staccatissimo</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Tenuto</articulation-name>
+            <action name="apply_articulation_from_preset">3</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Marcato</articulation-name>
+            <action name="apply_articulation_from_preset">8</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Flutter</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>flz.</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Untuned Percussion</instrument-name>
+        <articulation>
+            <articulation-name>Anvil</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Bass Drum 1</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Bass Drum 2</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Cymbals</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Military Drum</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Piatti</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Snare Drum 1</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Snare Drum 2</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Tam Tam</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Tambourine</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Tenor Drum</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Toys</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Triangle</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Timpani</instrument-name>
+        <articulation>
+            <articulation-name>Hits</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Rolls</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Hits Soft</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Dynamics</category>
+                <text></text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Rolls Soft</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Dynamics</category>
+                <text></text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Long Roll Hotrods</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>hotrods</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Hits Damped</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>dampened</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Hits Super Damped</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>dampened</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Hotroads Hits Damped</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>hotrods</text>
+            </action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>dampened</text>
+            </action>
+        </articulation>
+        <articulation>
+            <articulation-name>Hits Damped Soft</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Dynamics</category>
+                <text></text>
+            </action>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>dampened</text>
+            </action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Harp</instrument-name>
+        <articulation>
+            <articulation-name>Sustained</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Damped</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Damped Medium</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Bisbigliando Trem</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Gliss FX</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Marimba</instrument-name>
+        <articulation>
+            <articulation-name>Hits</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Rolls</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Celeste</instrument-name>
+        <articulation>
+            <articulation-name>Sustained</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Damped</articulation-name>
+            <action name="apply_articulation_from_preset">1</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Damped Medium</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Xylophone</instrument-name>
+        <articulation>
+            <articulation-name>Hits</articulation-name>
+            <action name="transpose">-12</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Rolls</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="transpose">-12</action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Glockenspiel</instrument-name>
+        <articulation>
+            <articulation-name>Hits</articulation-name>
+            <action name="transpose">-24</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Rolls</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+            <action name="transpose">-24</action>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Tubular Bells</instrument-name>
+        <articulation>
+            <articulation-name>Hits</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Rolls</articulation-name>
+            <action name="apply_articulation_from_preset">34</action>
+        </articulation>
+        <articulation>
+            <articulation-name>Hits Damped</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Vibraphone</instrument-name>
+        <articulation>
+            <articulation-name>Hits</articulation-name>
+        </articulation>
+    </instrument>
+    <instrument>
+        <instrument-name>Crotales</instrument-name>
+        <articulation>
+            <articulation-name>Hits</articulation-name>
+        </articulation>
+        <articulation>
+            <articulation-name>Hits Bowed</articulation-name>
+            <action name="add_expression_to_phrase_starts">
+                <category>Technique Text</category>
+                <text>arco</text>
+            </action>
+        </articulation>
+    </instrument>
+</plugin>
