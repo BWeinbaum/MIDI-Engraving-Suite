@@ -1,6 +1,7 @@
 --[[
+-------------------------------------------------------------------------------------------------------
 
-    Copyright (c) 2024 Brendan Weinbaum.
+    Copyright (c) 2025 Brendan Weinbaum.
     All rights reserved.
 
     This module serves as a library that is used by two other modules: articulation_xml_handler.lua
@@ -9,22 +10,43 @@
     Plugins are organized into instruments, each with its own articulations. Articulations
     each possess a number of actions, which are implemented via articulation_xml_handler.lua.
 
+    Declaration order:
+    1. Instance fields
+    2. Constructor
+    3. Helper methods
+    4. Interface
+
+-------------------------------------------------------------------------------------------------------
 ]]
 
+--[[
+-------------------------------------------------------------------------------------------------------
+    Import Modules
+-------------------------------------------------------------------------------------------------------
+]]
 
 local cmath = require "Lib.math_lib"
 
--- Library for XML parsing and handling of articulation data (static).
-local articulationxmllib = {}
-
 --[[
+-------------------------------------------------------------------------------------------------------
+    Global Module: Articulation XML Library
+
+    Module encompassing this Lua file. Resonsible for defining the XMLArticulation, XMLInstrument, and XMLPlugin classes.
+    Also defines the ACTIONS table, which contains definitions for actions that can be applied to an articulation.
+
+
     Steps to Define New Action:
     (1) Define action properties in articulationxmllib.ACTIONS (articulation_xml_lib.lua)
     (2) If new data type, define data type in IsValidAction (articulation_xml_lib.lua)
     (3) Define how to interpret data from XML preset using apply_preset (articulation_xml_parser.lua)
     (4) Define Select... row button behaviour in Articulation_Dialog:RegisterHandleControlEvent(row_buttons[action_row], function) (articulation_xml_parser.lua)
     (5) Define handler process in ApplyAction (articulation_xml_handler.lua)
+
+-------------------------------------------------------------------------------------------------------
 ]]
+
+-- Library for XML parsing and handling of articulation data (static).
+local articulationxmllib = {}
 
 --- @alias Actions
 --- | ''
@@ -79,6 +101,18 @@ function articulationxmllib.IsValidAction(key, value)
     return false
 end
 
+--[[
+--------------------------------------------------------------------------------------------------------
+
+    Global Module (belonging to articulationxmllib): XMLArticulation
+
+    Module defining the XMLArticulation class, which represents an articulation in a plugin.
+    XMLArticulations are defined by the actions that the ArticulationXMLHandler is meant to perform on
+    their staff. These actions are stored in a Lua table, and are defined by the ACTIONS table.
+
+--------------------------------------------------------------------------------------------------------
+]]
+
 --- @class XMLArticulation
 --- @field private name string
 --- @field private action_keys string[] Stored in xml format (not display format).
@@ -102,10 +136,6 @@ function articulationxmllib.XMLArticulation.New(name)
     self.id = -1
     return self
 end
-
---[[
-    Public methods
-]]
 
 --- Adds an action to the articulation's list.
 --- Will fail if given an invalid action value data type.
@@ -157,7 +187,16 @@ function articulationxmllib.XMLArticulation:DebugDump()
     end
 end
 
+--[[
+--------------------------------------------------------------------------------------------------------
 
+    Global Module (belonging to articulationxmllib): XMLInstrument
+
+    Module defining the XMLInstrument class, which represents an instrument in a plugin. XMLInstruments
+    are defined by their name and the articulations that they contain.
+
+--------------------------------------------------------------------------------------------------------
+]]
 
 --- @class XMLInstrument
 --- @field private name string
@@ -212,6 +251,18 @@ function articulationxmllib.XMLInstrument:DebugDump()
     end
 end
 
+--[[
+--------------------------------------------------------------------------------------------------------
+
+    Global Module (belonging to articulationxmllib): XMLPlugin
+
+    Module defining the XMLPlugin class, which represents a VST plugin with observations stored in an
+    individual XML file (in /Lib/Data). XMLPlugins are defined by their name, instruments, and certain
+    special properties that are used to control the plugin's behaviour in the UI
+    (see articulationxmllib.PLUGIN_PROPERTY_DEFAULTS).
+
+--------------------------------------------------------------------------------------------------------
+]]
 
 --- @class XMLPlugin
 --- @field private name string

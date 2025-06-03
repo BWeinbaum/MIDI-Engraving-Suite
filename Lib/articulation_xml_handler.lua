@@ -1,22 +1,42 @@
 --[[
+-------------------------------------------------------------------------------------------------------
 
-    Copyright (c) 2024 Brendan Weinbaum.
+    Copyright (c) 2025 Brendan Weinbaum.
     All rights reserved.
 
     This module is referenced mainly by the Assign Staves to Instruments subtask. It is
     responsible for interpretting and applying actions stored in an XMLArticulation object
     (defined in articulation_xml_lib.lua).
 
+    Declaration order:
+    1. Instance fields
+    2. Constructor
+    3. Helper methods
+    4. Interface
+
+    TODO:
+    - Determine if this class would be better implemented entirely statically.
+
+-------------------------------------------------------------------------------------------------------
 ]]
 
 --[[
-    TODO:
-    - Determine if this class would be better implemented entirely statically.
+-------------------------------------------------------------------------------------------------------
+    Import Modules
+-------------------------------------------------------------------------------------------------------
 ]]
 
 local artxml = require "Lib.articulation_xml_lib"
 local cmath = require "Lib.math_lib"
 local preset = require "Lib.preset_browser_lib"
+
+--[[
+-------------------------------------------------------------------------------------------------------
+    Global Module: ArticulationXMLHandler
+
+    Module encompassing this Lua file. Resonsible for applying actions defined in an XMLArticulation (from articulation_xml_lib).
+-------------------------------------------------------------------------------------------------------
+]]
 
 --- @class ArticulationXMLHandler
 --- @field private staff integer
@@ -24,7 +44,9 @@ local ArticulationXMLHandler = {}
 ArticulationXMLHandler.__index = ArticulationXMLHandler
 
 --[[
-    Action definitions / Helper methods
+-------------------------------------------------------------------------------------------------------
+    Action Definitions / Helper Methods
+-------------------------------------------------------------------------------------------------------
 ]]
 
 --- Adds an articulation to all entries in a staff.
@@ -166,6 +188,12 @@ local function add_expression_to_phrase_starts(staff, value)
     end
 end
 
+--[[
+-------------------------------------------------------------------------------------------------------
+    Constructor
+-------------------------------------------------------------------------------------------------------
+]]
+
 --- Constructor method for ArticulationXMLHandler.
 --- @return ArticulationXMLHandler
 function ArticulationXMLHandler.Create()
@@ -175,7 +203,9 @@ function ArticulationXMLHandler.Create()
 end
 
 --[[
-    Public methods
+-------------------------------------------------------------------------------------------------------
+    Interface
+-------------------------------------------------------------------------------------------------------
 ]]
 
 --- Applies an action to the focused staff.
